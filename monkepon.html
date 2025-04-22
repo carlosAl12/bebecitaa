@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon - Batalla de Mascotas</title>
+    <link rel="stylesheet" href="diseño.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <section id="seleccionar_mascota">
+        <h1 class="titulo">Mokepon</h1>
+        <h2 class="subtitulo">Elige tu mascota</h2>
+
+        <div id="contenedorTarjetas" class="tarjetas">
+        </div>
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+    
+    <section id="verMapa">
+        <h2 class="subtitulo">recorre el mapa con tu mokepon</h2>
+        <canvas id="mapa"></canvas>
+        <button  onmouseup='detenerMovimiento()' onmousedown='moverArriba()'>Arriba</button>
+        <div>
+            <button  onmouseup='detenerMovimiento()'onmousedown='moverIzquierda()'>izquierda</button>
+        <button onmouseup='detenerMovimiento()' onmousedown='moverAbajo()'>abajo</button>
+        <button onmouseup='detenerMovimiento()' onmousedown='moverDerecha()'>Derecha</button>
+    </div>
+    </section>
+<div id="PeleaTotal">
+    <section id="seleccionar_ataque">
+        <h1 class="titulo">Mokepon</h1>
+        <h2>Elige tu ataque:</h2>
+
+        <div id="contenedorAtaques" class="tarjetasAtaque">
+        </div>
+    </section>
+
+    <div id="pelea">
+    <section id="mensajes">
+        <p id="resultado">tu puedes:></p>
+
+        <section id="reiniciar">
+            <button id="reiniciarJuego">Reiniciar</button>
+        </section>
+    </div>  
+    <div id="infoCombate">
+        <div class="ataquesJugador">
+            <p id="jugadorVidas">0</p> 
+            <p id="mascotaJugador"></p>
+            <div id="ataqueDelJugador"></div>
+        </div>
+        <div class="ataquesEnemigo">
+            <p id="EnemigoVidas">0</p> 
+            <p id="mascotaEnemigo"></p>
+            <div id="ataqueDelEnemigo"></div>
+         </div>
+       
+    </div>
+</div>
+    <script src="codigo.js" defer></script> 
+</body>
+</html>
+
+
